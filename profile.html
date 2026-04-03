@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Quiz</h1>
+            <div class="nav-links">
+                <a href="quiz.html">Start Quiz</a>
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="profile-container">
+        <div class="profile-header">
+            <div class="avatar">👤</div>
+            <h2 id="profileName">John Doe</h2>
+            <p id="profileEmail">john@example.com</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Total Quizzes</h3>
+                <span id="totalQuizzes">5</span>
+            </div>
+            <div class="stat-card">
+                <h3>Average Score</h3>
+                <span id="avgScore">82%</span>
+            </div>
+            <div class="stat-card">
+                <h3>Best Score</h3>
+                <span id="bestScore">95%</span>
+            </div>
+            <div class="stat-card">
+                <h3>Rank</h3>
+                <span id="userRank">#42</span>
+            </div>
+        </div>
+
+        <div class="recent-quizzes">
+            <h3>Recent Quizzes</h3>
+            <div id="quizHistory">
+                <!-- Quiz history loaded by JS -->
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

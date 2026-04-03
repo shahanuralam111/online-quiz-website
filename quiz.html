@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Quiz</h1>
+            <div class="nav-links">
+                <a href="profile.html">Profile</a>
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="quiz-container">
+        <div class="quiz-header">
+            <div class="quiz-info">
+                <h2>General Knowledge Quiz</h2>
+                <p>Question <span id="questionNum">1</span> of 10</p>
+            </div>
+            <div class="timer">
+                <span>Time: </span>
+                <span id="timer">10:00</span>
+            </div>
+            <div class="score">
+                Score: <span id="currentScore">0</span>/10
+            </div>
+        </div>
+
+        <div id="quizContent" class="quiz-content">
+            <!-- Questions will be loaded here by JavaScript -->
+        </div>
+
+        <div class="quiz-controls">
+            <button id="prevBtn" class="btn" disabled>Previous</button>
+            <button id="nextBtn" class="btn btn-primary">Next</button>
+            <button id="submitBtn" class="btn btn-success" style="display: none;">Submit Quiz</button>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

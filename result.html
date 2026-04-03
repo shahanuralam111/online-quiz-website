@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Results - QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Quiz</h1>
+            <div class="nav-links">
+                <a href="profile.html">Profile</a>
+                <a href="quiz.html">New Quiz</a>
+                <a href="index.html">Home</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="result-container">
+        <div class="result-card">
+            <div class="result-icon">🏆</div>
+            <h2 id="resultTitle">Great Job!</h2>
+            <div class="score-display">
+                <span id="finalScore">85</span>
+                <span>/10</span>
+            </div>
+            <div class="result-details">
+                <p id="resultMessage">You scored 85%! Excellent performance!</p>
+                <div class="grade">Grade: <span id="grade">A</span></div>
+            </div>
+            <div class="result-actions">
+                <a href="quiz.html" class="btn btn-primary">Take Another Quiz</a>
+                <a href="profile.html" class="btn btn-secondary">View Profile</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
